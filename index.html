@@ -37,8 +37,9 @@
                 </div>
                 <div class="column right">
                     <p class="navbar-item desktop ">Sign in</p>
-                    <figure class="navbar-item image ">
-                        <i class="fas fa-bars"></i>
+                    <figure class="navbar-item image " onclick="openNav()">
+                        <i class="fas fa-bars" id="menuToggle"></i>
+
                     </figure>
                 </div>
 
@@ -48,6 +49,17 @@
         </div>
 
     </section>
+    <div class="sidebar">
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
 
     <div class="slideshow-container">
 

@@ -1,48 +1,64 @@
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="https://kit.fontawesome.com/9104d82184.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="CSS/bulma.min.css">
-  <link rel="stylesheet" href="CSS/styles.css">
-  <title>Crusty Deli Pizza</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/9104d82184.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/bulma.min.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Crusty Deli Pizza</title>
 </head>
+
 <body class="column">
-  <section class="bar">
-    <div class="hero-head">
-      <div class="barStyle columns is-mobile is-marginless heading has-text-weight-bold">
-        <div class="column left ">
-          <a href="index.html">
-            <p class="navbar-item ">CRUSTY</p>
-          </a>
-        </div>
-        <div class="column center desktop">
-          <a href="index.html">
-            <p class="navbar-item  ">Home</p>
-          </a>
-          <a href="services.html">
-            <p class="navbar-item ">Services</p>
-          </a>
-          <a href="blog.html">
-            <p class="navbar-item ">Blog</p>
-          </a>
-          <a href="contact.html">
-            <p class="navbar-item ">Contact us</p>
-          </a>
-        </div>
-        <div class="column right">
-          <p class="navbar-item desktop ">Sign in</p>
-          <figure class="navbar-item image has-text-black center">
-            <i class="fas fa-bars"></i>
-          </figure>
+    <section class="bar">
+        <div class="hero-head">
+            <div class="barStyle columns is-mobile is-marginless heading has-text-weight-bold">
+                <div class="column left ">
+                    <a href="index.html">
+                        <p class="navbar-item ">CRUSTY</p>
+                    </a>
+                </div>
+                <div class="column center desktop">
+                    <a href="index.html">
+                        <p class="navbar-item  ">Home</p>
+                    </a>
+                    <a href="services.html">
+                        <p class="navbar-item ">Services</p>
+                    </a>
+                    <a href="blog.html">
+                        <p class="navbar-item ">Blog</p>
+                    </a>
+                    <a href="contact.html">
+                        <p class="navbar-item ">Contact us</p>
+                    </a>
+                </div>
+                <div class="column right">
+                    <p class="navbar-item desktop ">Sign in</p>
+                    <figure class="navbar-item image " onclick="openNav()">
+                        <i class="fas fa-bars" id="menuToggle"></i>
+
+                    </figure>
+
+                </div>
+            </div>
 
         </div>
-      </div>
 
+    </section>
+    <div class="sidebar">
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
     </div>
+    <script src="js/scripts.js"></script>
 
-  </section>
-  
 </body>
+
 </html>

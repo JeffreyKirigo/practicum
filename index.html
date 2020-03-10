@@ -8,7 +8,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
     <link rel="stylesheet" href="CSS/bulma.min.css">
     <link rel="stylesheet" href="CSS/styles.css">
-    <script src="js/scripts.js"></script>
     <script src="js/jquery-3.4.1.min.map"></script>
     <title>Crusty Deli Pizza</title>
 </head>
@@ -55,19 +54,19 @@
         <div class="mySlides slide">
             <div class="numbertext">1 / 3</div>
             <img src="images/pexels-photo-1653877.jpeg" style="width:100%">
-            <div class="text">Your better Option</div>
+            <div class="writing-bottom">Your better Option</div>
         </div>
 
         <div class="mySlides slide">
             <div class="numbertext">2 / 3</div>
             <img src="images/pexels-photo-365459.jpeg" style="width:100%">
-            <div class="text">Yummy</div>
+            <div class="writing-bottom">Yummy</div>
         </div>
 
         <div class="mySlides slide">
             <div class="numbertext">3 / 3</div>
             <img src="images/pexels-photo-825661.jpeg" style="width:100%">
-            <div class="text">Crunchy Crust</div>
+            <div class="writing-bottom">Crunchy Crust</div>
         </div>
 
     </div>
@@ -152,29 +151,9 @@
         </div>
 
     </div>
-    <script>
-        var slideIndex = 0;
-        showSlides();
 
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
-        }
-    </script>
+    <script src="js/scripts.js"></script>
+
 </body>
 
 </html>

@@ -76,6 +76,7 @@
 }
 
 .learn-more .column p {
+    position: relative;
     margin-top: 10px;
 }
 
@@ -83,7 +84,9 @@
     box-shadow: 0px 1px 0px grey;
 }
 
-.learn-more p {}
+.learn-more p {
+    font-family: BlinkMacSystemFont;
+}
 
 .button {
     position: relative;
@@ -136,7 +139,7 @@ img {
 
 /* Caption text */
 
-.text {
+.writing-bottom {
     color: #000000;
     font-size: 25px;
     font-family: BlinkMacSystemFont;
